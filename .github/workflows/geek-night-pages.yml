@@ -30,9 +30,8 @@ jobs:
     # Install bundler
     - name: Install gem
       run: |
-        gem sources -a http://rubygems.org,
-        gem install bundler,
-        bundle exec nanoc.
+        gem install bundler
+        bundle exec nanoc
     - name: Deploy to GitHub Pages
       uses: crazy-max/ghaction-github-pages@v2
       with:
